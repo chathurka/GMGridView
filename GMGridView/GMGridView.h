@@ -89,6 +89,13 @@ typedef enum
 
 @property (nonatomic, readonly) UIScrollView *scrollView __attribute__((deprecated)); // The grid now inherits directly from UIScrollView
 
+//Long press delete and moving
+@property (nonatomic,strong) UILongPressGestureRecognizer *longPressGesture;
+@property (nonatomic,strong) GMGridViewCell *sortMovingItem;
+@property (nonatomic,strong) UIPanGestureRecognizer *sortingPanGesture;
+@property (nonatomic,assign) CGSize itemSize;
+@property (nonatomic,assign) NSInteger sortFuturePosition;
+
 // Reusable cells
 - (GMGridViewCell *)dequeueReusableCell;                              // Should be called in GMGridView:cellForItemAtIndex: to reuse a cell
 - (GMGridViewCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier;
@@ -110,6 +117,12 @@ typedef enum
 
 // Force the grid to update properties in an (probably) animated way.
 - (void)layoutSubviewsWithAnimation:(GMGridViewItemAnimation)animation;
+
+//long press delete and moving cell
+- (void)sortingMoveDidStartAtPoint:(CGPoint)point;
+- (void)sortingMoveDidContinueToPoint:(CGPoint)point;
+- (void)setSubviewsCacheAsInvalid;
+- (void)longPressGestureUpdated:(UILongPressGestureRecognizer *)longPressGesture;
 
 @end
 

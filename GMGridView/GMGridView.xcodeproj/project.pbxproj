@@ -23,6 +23,8 @@
 		78509350149FAC71000787E4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7850934D149FAC71000787E4 /* QuartzCore.framework */; };
 		78509351149FAC71000787E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7850934E149FAC71000787E4 /* UIKit.framework */; };
 		78509352149FAC71000787E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7850934F149FAC71000787E4 /* CoreGraphics.framework */; };
+		84142F5417FEBDDF00EE420C /* GMGridViewCustom.h in Headers */ = {isa = PBXBuildFile; fileRef = 84142F5217FEBDDE00EE420C /* GMGridViewCustom.h */; };
+		84142F5517FEBDDF00EE420C /* GMGridViewCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 84142F5317FEBDDE00EE420C /* GMGridViewCustom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		7850934D149FAC71000787E4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7850934E149FAC71000787E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7850934F149FAC71000787E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84142F5217FEBDDE00EE420C /* GMGridViewCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMGridViewCustom.h; sourceTree = SOURCE_ROOT; };
+		84142F5317FEBDDE00EE420C /* GMGridViewCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMGridViewCustom.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 				78509339149FAC61000787E4 /* GMGridViewCell.m */,
 				7850933B149FAC61000787E4 /* GMGridViewLayoutStrategies.h */,
 				7850933C149FAC61000787E4 /* GMGridViewLayoutStrategies.m */,
+				84142F5217FEBDDE00EE420C /* GMGridViewCustom.h */,
+				84142F5317FEBDDE00EE420C /* GMGridViewCustom.m */,
 			);
 			path = GMGridView;
 			sourceTree = "<group>";
@@ -129,6 +135,7 @@
 				78509347149FAC61000787E4 /* GMGridViewLayoutStrategies.h in Headers */,
 				16A0361014A012E60062437D /* UIGestureRecognizer+GMGridViewAdditions.h in Headers */,
 				16A0361514A012EF0062437D /* UIView+GMGridViewAdditions.h in Headers */,
+				84142F5417FEBDDF00EE420C /* GMGridViewCustom.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +194,7 @@
 				78509348149FAC61000787E4 /* GMGridViewLayoutStrategies.m in Sources */,
 				16A0361114A012E60062437D /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */,
 				16A0361614A012EF0062437D /* UIView+GMGridViewAdditions.m in Sources */,
+				84142F5517FEBDDF00EE420C /* GMGridViewCustom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

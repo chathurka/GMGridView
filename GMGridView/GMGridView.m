@@ -43,10 +43,6 @@ static const UIViewAnimationOptions kDefaultAnimationOptions = UIViewAnimationOp
 
 @interface GMGridView () <UIGestureRecognizerDelegate, UIScrollViewDelegate>
 {
-    // Sorting Gestures
-    UIPanGestureRecognizer       *_sortingPanGesture;
-    UILongPressGestureRecognizer *_longPressGesture;
-    
     // Moving gestures
     UIPinchGestureRecognizer     *_pinchGesture;
     UITapGestureRecognizer       *_tapGesture;
@@ -55,12 +51,9 @@ static const UIViewAnimationOptions kDefaultAnimationOptions = UIViewAnimationOp
     
     // General vars
     NSInteger _numberTotalItems;
-    CGSize    _itemSize;
+    //CGSize    _itemSize;
     NSMutableSet *_reusableCells;
     
-    // Moving (sorting) control vars
-    GMGridViewCell *_sortMovingItem;
-    NSInteger _sortFuturePosition;
     BOOL _autoScrollActive;
     
     CGPoint _minPossibleContentOffset;
@@ -152,6 +145,12 @@ static const UIViewAnimationOptions kDefaultAnimationOptions = UIViewAnimationOp
 
 @synthesize firstPositionLoaded = _firstPositionLoaded;
 @synthesize lastPositionLoaded = _lastPositionLoaded;
+
+@synthesize longPressGesture = _longPressGesture;
+@synthesize sortingPanGesture = _sortingPanGesture;
+@synthesize sortMovingItem = _sortMovingItem;
+@synthesize sortFuturePosition = _sortFuturePosition;
+@synthesize itemSize = _itemSize;
 
 //////////////////////////////////////////////////////////////
 #pragma mark Constructors and destructor
