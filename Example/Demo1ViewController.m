@@ -10,6 +10,7 @@
 #import "Demo1ViewController.h"
 #import "GMGridView.h"
 #import "OptionsViewController.h"
+#import "GMGridViewCustom.h"
 
 #define NUMBER_ITEMS_ON_LOAD 250
 #define NUMBER_ITEMS_ON_LOAD2 30
@@ -113,7 +114,7 @@
     
     NSInteger spacing = INTERFACE_IS_PHONE ? 10 : 15;
     
-    GMGridView *gmGridView = [[GMGridView alloc] initWithFrame:self.view.bounds];
+    GMGridView *gmGridView = [[GMGridViewCustom alloc] initWithFrame:self.view.bounds];
     gmGridView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     gmGridView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:gmGridView];
